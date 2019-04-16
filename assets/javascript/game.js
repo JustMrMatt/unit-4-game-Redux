@@ -18,16 +18,16 @@ function gameStart() {
     var crystalFourVal;
 
     crystalOneVal = Math.floor(Math.random() * (12 - 1 + 1) + 1);
-    $("firstCrystal").attr("value", crystalOneVal);
+    $("#firstCrystal").attr("data-value", crystalOneVal);
     console.log(crystalOneVal);        
     crystalTwoVal = Math.floor(Math.random() * (12 - 1 + 2) + 1);   
-    $("secondCrystal").attr("value", crystalTwoVal);     
+    $("#secondCrystal").attr("data-value", crystalTwoVal);     
     console.log(crystalTwoVal);   
     crystalThreeVal = Math.floor(Math.random() * (12 - 1 + 3) + 1);  
-    $("thirdCrystal").attr("value", crystalThreeVal);   
+    $("#thirdCrystal").attr("data-value", crystalThreeVal);   
     console.log(crystalThreeVal);      
     crystalFourVal = Math.floor(Math.random() * (12 - 1 + 4) + 1);   
-    $("fourthCrystal").attr("value", crystalFourVal);      
+    $("#fourthCrystal").attr("data-value", crystalFourVal);      
     console.log(crystalFourVal);  
 }
 
@@ -48,12 +48,13 @@ function roundOver() {
 }
 
 $(".crystal-btn").on("click", function(){         
-    var cVal = ($(this).attr("value"));
+    var cVal = ($(this).attr("data-value"));
+    console.log(cVal);
     cVal = parseInt(cVal);
-    console.log(cVal); // Keeps coming back as NAN and I do not know why. This is supposed to get the value of each crystal
+    console.log(cVal); 
     Score = Score + cVal;
     $("#playerScore").html(Score);
-    console.log(Score); // This results in NAN cVal is NAN. 
+    console.log(Score); 
     roundOver();
 })
 
