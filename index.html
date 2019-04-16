@@ -1,0 +1,83 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystals Collector</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+    <div class="primaryRow">
+        <div class="textBoxOne">
+            <p>Crystal Collector</p>
+        </div>
+    </div>
+
+    <div class="secondaryRow">
+        <div class="textBoxTwo">
+            <p>
+                You will be given a random number at the start of the game.
+            </p>
+            <p>
+                There are Four Crystals below. Clicking a Crystal adds a specific amount of points to your total score.
+            </p>
+            <p>
+                Win the game by matching your total score to the random number. Lose by going over the random number.
+            </p>
+            <p>
+                The values of the Crystals change each time the game starts.
+            </p>
+            <p>
+                The Crystal's value is hidden until it is clicked.
+            </p>
+        </div>
+    </div>
+
+    <br>
+    
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-2">
+            <img src="assets/images/BlueCrystal.jpg" class="crystal-btn" id="firstCrystal">
+        </div>
+        <div class="col-2">
+            <img src="assets/images/MultiCrystal.jpg" class="crystal-btn" id="secondCrystal">
+        </div>
+        <div class="col-2">
+            <img src="assets/images/BlueCrystal.jpg" class="crystal-btn" id="thirdCrystal">
+        </div>
+        <div class="col-2">
+            <img src="assets/images/MultiCrystal.jpg" class="crystal-btn" id="fourthCrystal">
+        </div>
+        <div class="col-2"></div>
+    </div>
+
+    <br>
+  
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-2">
+            <p class="scoreText">Number to reach: <span id="goalScore"></span></p>
+        </div>
+        <div class="col-2">
+            <p class="scoreText">Your Score: <span id="playerScore"></span></p>
+        </div>
+        <div class="col-2">
+            <p class="scoreText">Wins: <span id="wins"></span></p>
+        </div>
+        <div class="col-2">
+            <p class="scoreText">Losses: <span id="losses"></span></p>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>

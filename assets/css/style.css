@@ -1,0 +1,22 @@
+body {
+    background-image: url(../images/CrystalCavern.jpg)
+}
+
+.primaryRow {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 36px;
+    color: white;
+}
+
+.secondaryRow {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+.scoreText {
+    font-weight: bold;
+    color: white;
+}
